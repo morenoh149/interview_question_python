@@ -5,7 +5,7 @@ The webpage will be served by a back-end which will have the ability to persist 
 
 #### Back-end Instructions
 
-- Within this repo you will have noticed a folder entitled `flask-backend-starter-code`.
+- Within this repo you will find a flask api (`app.py`).
 
 
 - The back-end contain several errors,
