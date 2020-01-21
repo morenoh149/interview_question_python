@@ -7,7 +7,6 @@ The webpage will be served by a back-end which will have the ability to persist 
 
 - Within this repo you will find a flask api (`app.py`).
 
-
 - The back-end contain several errors,
 so you will need to do some debugging to ensure is working correctly.
 
@@ -24,12 +23,17 @@ the browser opens a new page with information about that specific movie.
 
 - Provide a link to display favorited movies.
 
+- Add bootstrap 4 and make sure the app works will on your phone.
+
+- The app should handle edgecases like searching for "   star  " or "blade run".
+
 #### Things we are looking for
 
 - Clear, simple code
 - Explanatory comments for beginners
 - Consistent Naming Conventions
 - Valid HTML, CSS, Python, and JavaScript
+- Proper handling of edge-cases. You should try to break your solution and fix any issues before submitting it.
 
 #### Deliverables
 
