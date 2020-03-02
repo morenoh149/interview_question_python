@@ -8,7 +8,7 @@ The webpage will be served by a back-end which will have the ability to persist 
 - Within this repo you will find a flask api (`app.py`).
 
 - The back-end contain several errors,
-so you will need to do some debugging to ensure is working correctly.
+so you will need to do some debugging to ensure it is working correctly.
 
 - The page should have a form that accepts a users query.
 - the api uses the [OMDBapi](http://www.omdbapi.com/)
