@@ -10,7 +10,7 @@ The webpage will be served by a back-end which will have the ability to persist 
 - The back-end contain several errors,
 so you will need to do some debugging to ensure it is working correctly.
 
-- The page should have a form that accepts a users query.
+- The page should have a form that allows visitors to search.
 - the api uses the [OMDBapi](http://www.omdbapi.com/)
 to search for matching movies and then display the results.
  - *Example*: If a user searches for `Star Wars`, a list of every Star Wars movie will be displayed.
