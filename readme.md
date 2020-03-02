@@ -23,20 +23,20 @@ the browser opens a new page with information about that specific movie.
 
 - Provide a link to display favorited movies.
 
-- Add bootstrap 4 and make sure the app works will on your phone.
+- Add bootstrap 4 and make sure the app works well on your phone.
 
 - The app should handle edgecases like searching for "   star  " or "blade run".
 
 #### Things we are looking for
 
 - Clear, simple code
-- Explanatory comments for beginners
+- Explanatory comments
 - Consistent Naming Conventions
 - Valid HTML, CSS, Python, and JavaScript
-- Proper handling of edge-cases. You should try to break your solution and fix any issues before submitting it.
+- Proper handling of edge-cases. You should try to break the website and fix any issues before submitting it.
 
 #### Deliverables
 
 - Please send us back a link to a git repo with the completed code challenge. 
 
-- Include a README.md file in your repo with a link to your application deployed on Heroku or Digital Ocean.
+- Include a README.md file in your repo with a link to your application deployed on Heroku or any cloud provider.
