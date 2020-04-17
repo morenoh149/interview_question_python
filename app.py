@@ -7,9 +7,13 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
+if __name__ == '__main__':
+    app.run()
+
+'''
 @app.route('favorites')
 def favorites():
-    Read out favorited movies.
+#    Read out favorited movies.
     filename = os.path.join('data.json')
     with open(filename) as data_file:
         data = json.load(data_file)
@@ -32,3 +36,4 @@ def movie_detail():
     qs_name = request.args.get('name', '')
     qs_oid = request.args.get('oid', '')
     return f'Hello, {escape(name)}!'
+'''
