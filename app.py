@@ -1,5 +1,5 @@
 from flask import Flask, escape, request, render_template
-import json
+import json,os
 
 app = Flask(__name__)
 
@@ -7,7 +7,7 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-@app.route('favorites')
+@app.route('/favorites')
 def favorites():
 #    Read out favorited movies.
     filename = os.path.join('data.json')
@@ -15,9 +15,15 @@ def favorites():
         data = json.load(data_file)
         return data
 
+@app.route('/search', methods=['POST'])
+def search():
+    """if POST, query movie api for data and return results."""
+    query = request.form['title']
+    return f'Hello, {query}!'
+
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug = True,port = 5000)
 
 '''
 
@@ -26,11 +32,6 @@ def favorites():
     """if query params are passed, write movie to json file."""
     return render_template('favorites.html')
 
-@app.route('/search', methods=['POST'])
-def search():
-    """if POST, query movie api for data and return results."""
-    query = request.form['title']
-    return f'Hello, {query}!'
 
 @app.route('/movie/<movie_oid>')
 def movie_detail():
