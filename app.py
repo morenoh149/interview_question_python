@@ -7,10 +7,6 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-if __name__ == '__main__':
-    app.run()
-
-'''
 @app.route('favorites')
 def favorites():
 #    Read out favorited movies.
@@ -18,6 +14,12 @@ def favorites():
     with open(filename) as data_file:
         data = json.load(data_file)
         return data
+
+
+if __name__ == '__main__':
+    app.run()
+
+'''
 
 @app.route('/favorites')
 def favorites():
