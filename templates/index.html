@@ -1,10 +1,37 @@
-<h1>Moview search</h1>
+{% extends "base.html" %}
+{% block title %} Homepage {% endblock %}
 
-<a href="/favorites">Favorites</a>
+{% block content %}
 
-<form action="/search" method="post">
-  <label>Title</label>
-  <input name="title" />
+<!-- navigation bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Movie App</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Favourites</a>
+      </li>
+    </ul>
+  </div>
+</nav>
 
-  <input type="submit" />
-</form>
+<!-- Container -->
+<div class="container">
+  <br>
+    <!-- Search form-->
+    <form action="/search" method="post" >
+      <div class="input-group">
+        <input name="title" class="form-control" placeholder="Enter Movie Name"/>
+          <div class="input=group-btn">
+            <button class="btn btn-default" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+          </div>
+      </div>
+    </form>
+</div>
+{% endblock %}
